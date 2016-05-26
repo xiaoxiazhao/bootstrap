@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><Document></Document></title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+			@font-face {
+			    font-family: 'Imprima-Regular';
+			    src:url(../fonts/Imprima-Regular.ttf) format('truetype');
+			}
+			@font-face {
+				font-family: 'Audiowide-Regular';
+			    src:url(../fonts/Audiowide-Regular.ttf) format('truetype');
+			}
+			body{
+				font-family: 'Imprima-Regular';
+				background:#000;
+			}
+			body a{
+				transition: 0.5s all;
+				-webkit-transition: 0.5s all;
+				-o-transition: 0.5s all;
+				-moz-transition: 0.5s all;
+				-ms-transition: 0.5s all;
+			}
+			 ul{
+			 	padding: 0;
+				margin: 0;
+			 }
+		
+		h1,h2,h3,h4,h5,h6,p,label{
+			margin:0;
+		}
+		.header{
+			background: url('../images/back.jpg') no-repeat;
+			width:100%;
+			min-height: 750px;
+			display: block;
+			background-size: cover;
+		}
+		.header-main{
+			background: url(../images/back.jpg) no-repeat ;
+			width:100%;
+			min-height: 150px;
+			display: block;
+			background-size: cover;
+		}
+		.logo h1{
+			font-size: 4em;
+			font-family: 'Audiowide-Regular';
+		}
+		.logo h1 a{
+			color:#fff;
+			text-decoration: none;
+		}
+		.top-nav {
+			float: right;
+		}
+		.logo{
+			float:left;
+			margin-top: 15px;
+		}
+		.top-nav ul li{
+			display: inline-block;
+			float: left;
+		}
+		.top-nav ul li a{
+			  color: #fff;
+		  font-size: 1.1em;
+		  text-decoration: none;
+		  display: block;
+		  padding: 1.6em 1em;
+		  text-align: center;
+		  font-family: 'Audiowide-Regular';
+		}
+		.top-nav ul li a i{
+			 display: block;
+			 margin-bottom: 3px;
+		}
+		.top-nav span.menu {
+			display: none;
+		}
+		.hvr-sweep-to-bottom {
+			  display: inline-block;
+			  vertical-align: middle;
+			  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+			  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+			  -moz-osx-font-smoothing: grayscale;
+			  position: relative;
+			  -webkit-transition-property: color;
+			  transition-property: color;
+			  -webkit-transition-duration: 0.3s;
+			  transition-duration: 0.3s;
+			}
+		.hvr-sweep-to-bottom:before {
+		  content: "";
+		  position: absolute;
+		  z-index: -1;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background:  #29c4ca;
+		  -webkit-transform: scaleY(0);
+		  transform: scaleY(0);
+		  -webkit-transform-origin: 50% 0;
+		  transform-origin: 50% 0;
+		  -webkit-transition-property: transform;
+		  transition-property: transform;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-timing-function: ease-out;
+		  transition-timing-function: ease-out;
+		}
+		.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+		  color: white;
+		}
+		.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+		  -webkit-transform: scaleY(1);
+		  transform: scaleY(1);
+		}
+		/*--colors--*/
+		.top-nav ul li a.color{
+			background:#e8008a;
+		}
+		.top-nav ul li a.color1{
+			background: #01adef;
+		}
+		.top-nav ul li a.color2{
+			background: #d7df29;
+		}
+		.top-nav ul li a.color3{
+			background: #5e2c8f;
+		}
+		.top-nav ul li a.color4{
+			background: #ffc410;
+		}
+
+		/*-banner start here--*/
+
+		.banner-main {
+		  padding: 34.4em 0em 0em 0em;
+		}
+		.banner-matter  {
+		  width: 50%;
+		  padding: 3em;
+		  background:rgba(252, 252, 252, 0.34);
+		  float: right;
+		    text-align: left;
+		}
+		.banner-matter p {
+		  font-size: 1em;
+		  font-weight: 400;
+		  color: #fff;
+		  line-height: 1.6em;
+		}
+		.banner-matter h3{
+			color:#fff;
+			font-size: 2em;
+			font-family: 'Audiowide-Regular';
+		}
+	</style>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<h1><a href="##"> music club</a></h1>
+				</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=""></span>
+					<ul>
+						<li><a href="##" class="hvr-sweep-to-bottom"><i></i>Home</a></li>
+						<li><a href="##" class="hvr-sweep-to-bottom"><i></i>Albums</a></li>
+						<li><a href="##" class="hvr-sweep-to-bottom"><i></i>Blog</a></li>
+						<li><a href="##" class="hvr-sweep-to-bottom"><i></i>Events</a></li>
+						<li><a href="##" class="hvr-sweep-to-bottom"><i class="glyphicon glyphicon-envelope"></i>Mail</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+					<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(500, function(){
+						});
+					});
+			</script>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
